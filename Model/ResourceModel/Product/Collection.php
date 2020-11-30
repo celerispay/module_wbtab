@@ -42,7 +42,7 @@ class Collection extends \Magento\Catalog\Model\ResourceModel\Product\Collection
               /** Bugfix 
                *  Duplicate products issue in multiple store 
                */
-              ->where('wpi.store_id = ?',$this->getStoreId())
+            ->where('wpi.store_id = ?',$this->getStoreId())
            ;
            
         if ($inCartProductIds) {
