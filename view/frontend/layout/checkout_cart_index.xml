@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright 2019 aheadWorks. All rights reserved.
+* See LICENSE.txt for license details.
+*/
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="aw_wbtab_default"/>
+    <head>
+        <css src="Aheadworks_Wbtab::css/styles.css"/>
+        <css src="Aheadworks_Wbtab::css/slider.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Aheadworks\Wbtab\Block\Cart\Wbtab" name="wbtab_content_top" before="-" />
+            <block class="Aheadworks\Wbtab\Block\Cart\Wbtab" name="wbtab_content_bottom" after="-" />
+        </referenceContainer>
+        <referenceContainer name="checkout.cart.items">
+            <block class="Aheadworks\Wbtab\Block\Cart\Wbtab" name="wbtab_before_native" before="checkout.cart.crosssell" />
+            <block class="Aheadworks\Wbtab\Block\Cart\Wbtab" name="wbtab_instead_native" before="checkout.cart.crosssell" />
+            <block class="Aheadworks\Wbtab\Block\Cart\Wbtab" name="wbtab_after_native" after="checkout.cart.crosssell" />
+        </referenceContainer>
+        <move element="wbtab_before_native" destination="checkout.cart.container" before="checkout.cart.crosssell" />
+    </body>
+</page>

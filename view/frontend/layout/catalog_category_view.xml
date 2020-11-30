@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright 2019 aheadWorks. All rights reserved.
+* See LICENSE.txt for license details.
+*/
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="aw_wbtab_default"/>
+    <head>
+        <css src="Aheadworks_Wbtab::css/styles.css"/>
+        <css src="Aheadworks_Wbtab::css/slider.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content.top">
+            <block class="Aheadworks\Wbtab\Block\Catalog\Wbtab" name="wbtab_content_top" before="-" />
+        </referenceContainer>
+        <referenceContainer name="content.aside">
+            <block class="Aheadworks\Wbtab\Block\Catalog\Wbtab" name="wbtab_content_bottom" after="-" />
+        </referenceContainer>
+    </body>
+</page>

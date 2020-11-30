@@ -1,0 +1,28 @@
+{
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Aheadworks\\Wbtab\\": ""
+        }
+    },
+    "description": "N/A",
+    "license": [
+        "proprietary"
+    ],
+    "name": "aheadworks/module-wbtab",
+    "require": {
+        "magento/module-backend": ">100.0",
+        "magento/module-store": ">100.0",
+        "magento/module-catalog": ">100.0",
+        "magento/module-config": ">100.0",
+        "magento/framework": ">100.0"
+    },
+    "support": {
+        "email": "support@aheadworks.com",
+        "docs": "http://confluence.aheadworks.com/display/EUDOC/Documentation+Home"
+    },
+    "type": "magento2-module",
+    "version": "1.1.5"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright 2019 aheadWorks. All rights reserved.
+* See LICENSE.txt for license details.
+*/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <aw_wbtab>
+            <product_page>
+                <enable>1</enable>
+                <block_name>Customers who bought this also bought</block_name>
+                <block_position>wbtab_instead_native</block_position>
+                <block_layout>single_row</block_layout>
+                <products_limit>5</products_limit>
+                <display_add_to_cart>1</display_add_to_cart>
+            </product_page>
+            <catalog_page>
+                <block_name>You may also be interested in</block_name>
+                <block_position>wbtab_content_bottom</block_position>
+                <block_layout>single_row</block_layout>
+                <products_limit>5</products_limit>
+                <display_add_to_cart>1</display_add_to_cart>
+            </catalog_page>
+            <cart_page>
+                <block_name>You may also be interested in</block_name>
+                <block_position>wbtab_content_bottom</block_position>
+                <block_layout>single_row</block_layout>
+                <products_limit>5</products_limit>
+                <display_add_to_cart>1</display_add_to_cart>
+            </cart_page>
+        </aw_wbtab>
+    </default>
+</config>
